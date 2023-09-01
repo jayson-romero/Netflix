@@ -1,0 +1,17 @@
+.login {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+			to bottom,
+			hsla(0, 0%, 0%, 0) 0%,
+			rgba(0, 0, 0, 1) 100%
+		),
+		url("https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/2795661f-51fc-4481-86db-f2e79e9bbf8b/PH-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+	background-size: cover;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.login {
+		background: black;
+	}
+}
