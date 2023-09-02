@@ -1,5 +1,6 @@
 import Login from "./pages/login/Login"
 import HomeLayout from "./pages/home/HomeLayout"
+import AppLayout from "./pages/App/AppLayout"
 import {
 	createBrowserRouter,
 	createRoutesFromElements,
@@ -12,6 +13,7 @@ function App() {
 		createRoutesFromElements(
 			<>
 				<Route path="/" element={<HomeLayout />}></Route>
+				<Route path="browse" element={<AppLayout />}></Route>
 				<Route path="login" element={<Login />} />
 			</>
 		)

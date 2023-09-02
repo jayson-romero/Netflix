@@ -1,5 +1,7 @@
 import Hero from "./Hero"
 import Feature from "./Feature"
+import FAQ from "./FAQs/FAQ"
+import Footer from "../../components/Footer"
 
 const HomeLayout = () => {
 	return (
@@ -29,6 +31,8 @@ const HomeLayout = () => {
 				img="https://occ-0-1894-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55"
 				reverse={true}
 			/>
+			<FAQ />
+			<Footer />
 		</>
 	)
 }
