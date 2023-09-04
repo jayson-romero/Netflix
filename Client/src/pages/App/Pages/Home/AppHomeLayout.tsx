@@ -1,10 +1,16 @@
-import React from "react"
+import List from "../../Components/List"
 
 const AppHomeLayout = () => {
 	return (
-		<div>
-			<div className="text-black pt-[50px] min-h-screen">1sAppHomeLayout</div>
-		</div>
+		<>
+			<div className="text-white bg-black pt-[50px] min-h-screen">
+				<div className="wrapper">
+					<div className="newRelease ">
+						<List />
+					</div>
+				</div>
+			</div>
+		</>
 	)
 }
 

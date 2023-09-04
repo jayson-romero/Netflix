@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 const AppSideBar = ({ toggleAccordion }) => {
 	const genres = [
@@ -63,23 +63,33 @@ const AppSideBar = ({ toggleAccordion }) => {
 							Sign Out of Netflix
 						</Link>
 					</div>
+
 					{/* SECTIONS */}
 					<div className="sections flex flex-col pt-[10px] gap-[4px]">
-						<Link
+						<NavLink
 							to="/browse"
-							className="pl-[20px] hover:text-white"
+							className={({ isActive }) =>
+								isActive
+									? "pl-[20px] hover:text-white border-l-2 border-red-600"
+									: "pl-[20px] hover:text-white"
+							}
 							onClick={toggleAccordion}
 						>
 							Home
-						</Link>
-						<Link
-							to="/browse"
-							className="pl-[20px] hover:text-white"
+						</NavLink>
+						<NavLink
+							to="/"
+							className={({ isActive }) =>
+								isActive
+									? "pl-[20px] hover:text-white border-l border-red"
+									: "pl-[20px] hover:text-white"
+							}
 							onClick={toggleAccordion}
 						>
 							My List
-						</Link>
+						</NavLink>
 					</div>
+
 					{/* GENRES */}
 					<div className="genres flex flex-col mt-[5px] gap-[4px]">
 						{genres.map((genre) => (
